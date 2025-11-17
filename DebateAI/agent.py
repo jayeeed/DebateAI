@@ -1,9 +1,11 @@
 from google.adk.agents import LlmAgent, SequentialAgent, LoopAgent
+from google.adk.models.lite_llm import LiteLlm
 
+model_name = "openrouter/google/gemini-2.5-flash"
 
 # Pro Agent - Argues FOR the proposition
 pro_agent = LlmAgent(
-    model="gemini-2.5-flash",
+    model=LiteLlm(model=model_name),
     name="ProAgent",
     description="Argues in favor of the proposition",
     instruction="""You are a skilled debater arguing FOR the proposition.
@@ -18,7 +20,7 @@ pro_agent = LlmAgent(
 
 # Con Agent - Argues AGAINST the proposition
 con_agent = LlmAgent(
-    model="gemini-2.5-flash",
+    model=LiteLlm(model=model_name),
     name="ConAgent",
     description="Argues against the proposition",
     instruction="""You are a skilled debater arguing AGAINST the proposition.
@@ -50,7 +52,7 @@ debate_loop = LoopAgent(
 
 # Judge Agent - Evaluates all 3 rounds and picks a winner
 judge_agent = LlmAgent(
-    model="gemini-2.5-flash",
+    model=LiteLlm(model=model_name),
     name="JudgeAgent",
     description="Evaluates all debate rounds and declares a winner",
     instruction="""You are an impartial judge evaluating a 3-round debate.
