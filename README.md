@@ -1,31 +1,11 @@
-# Debate-AI Multi-Agent System
+# Debate-AI Multi-Agent Orchestration
 
 A multi-agent debate system built with Google ADK where two AI agents argue opposite sides of a topic and a judge declares the winner.
 
 ## ✨ Features
 
-```mermaid
-mindmap
-  root((Debate-AI))
-    Agents
-      ProAgent
-      ConAgent
-      JudgeAgent
-    Structure
-      LoopAgent 3x
-      SequentialAgent
-      Shared State
-    Features
-      3-Round Debate
-      Clean Output
-      UUID Sessions
-      Cross-Platform
-    Customization
-      Topics
-      Models
-      Word Limits
-      Iterations
-```
+<img width="800" height="400" alt="mindmap" src="https://github.com/user-attachments/assets/6f44d9c6-3552-43c4-b284-910c573b54c7" />
+
 
 - 🤖 **Three Core Agents:** Pro, Con, and Judge with loop-based repetition
 - 🔁 **LoopAgent Pattern:** Elegant 3-round structure using iteration
