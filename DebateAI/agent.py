@@ -67,9 +67,12 @@ judge_agent = LlmAgent(
     
     Declare a clear winner (Pro or Con) and explain your reasoning in under 150 words.
     Format your response as:
-    WINNER: [Pro/Con]
-    REASONING: [Your detailed explanation]
-    
+    ------------------------
+    WINNER: [Pro/Con]\n\n
+    REASONING: [Explanation]\n\n
+    LOSER: [Pro/Con]\n\n
+    REASONING: [Explanation]
+    ------------------------
     Do NOT include any meta-commentary about state or output.""",
     output_key="verdict",
 )
