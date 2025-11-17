@@ -10,13 +10,9 @@ A multi-agent debate system built with Google ADK where two AI agents argue oppo
 - 🤖 **Three Core Agents:** Pro, Con, and Judge with loop-based repetition
 - 🔁 **LoopAgent Pattern:** Elegant 3-round structure using iteration
 - 🥊 **3-Round Debate:** Agents build arguments progressively across rounds
-- 🔄 **Sequential Workflow:** Structured debate flow with automatic orchestration
 - 💾 **Shared State:** Agents access previous arguments to build stronger cases
-- 🆔 **UUID Generation:** Automatic unique IDs for isolated test runs
 - 🎯 **Clean Output:** No meta-commentary, just debate content
-- 📏 **Word Limits:** Concise responses (100 words per round, 150 for judge)
 - 🔧 **Customizable:** Easy to modify topics, instructions, and models
-- 🌐 **Cross-Platform:** Test scripts for Windows, Linux, and macOS
 
 ## 🎭 System Architecture
 
