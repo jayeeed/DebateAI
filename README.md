@@ -155,11 +155,14 @@ Edit the debate topic in any script:
 ## 📁 Project Structure
 
 ```
-agents/
-├── agent.py                 # Multi-agent system definition
-├── .env                     # Environment variables (API keys)
-├── test_debate_api.py       # Python test script
-└── README.md                # This file
+.
+├── DebateAI/
+│   ├── agent.py               # Multi-agent system definition
+│   └── __init__.py            # Package initialization
+├── .env                       # Environment variables (API keys)
+├── .gitignore                 # Git ignore file
+├── test_debate_api.py         # Python test script
+└── README.md                  # This file
 ```
 
 ## 🔧 API Endpoints Used
