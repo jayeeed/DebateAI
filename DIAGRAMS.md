@@ -58,13 +58,6 @@ graph TD
     
     H --> I[JudgeAgent]
     I --> J[Winner Declared]
-    
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#ffe1f5
-    style I fill:#e1ffe1
-    style J fill:#ffe1e1
-    style H fill:#f0f0f0
 ```
 
 **Purpose:** Shows how the LoopAgent executes 3 iterations and feeds into the Judge
@@ -86,29 +79,23 @@ sequenceDiagram
     User->>System: Submit debate topic
     System->>Looper: Start 3-round debate
     
-    rect rgb(200, 220, 255)
-        Note over Looper,Con: Round 1
-        Looper->>Pro: Argue FOR
-        Pro->>State: Save argument
-        Looper->>Con: Argue AGAINST
-        Con->>State: Save argument
-    end
+    Note over Looper,Con: Round 1
+    Looper->>Pro: Argue FOR
+    Pro->>State: Save argument
+    Looper->>Con: Argue AGAINST
+    Con->>State: Save argument
     
-    rect rgb(220, 255, 200)
-        Note over Looper,Con: Round 2
-        Looper->>Pro: Build on previous + Counter
-        Pro->>State: Update argument
-        Looper->>Con: Build on previous + Counter
-        Con->>State: Update argument
-    end
+    Note over Looper,Con: Round 2
+    Looper->>Pro: Build on previous + Counter
+    Pro->>State: Update argument
+    Looper->>Con: Build on previous + Counter
+    Con->>State: Update argument
     
-    rect rgb(255, 220, 200)
-        Note over Looper,Con: Round 3
-        Looper->>Pro: Closing statement
-        Pro->>State: Final argument
-        Looper->>Con: Closing statement
-        Con->>State: Final argument
-    end
+    Note over Looper,Con: Round 3
+    Looper->>Pro: Closing statement
+    Pro->>State: Final argument
+    Looper->>Con: Closing statement
+    Con->>State: Final argument
     
     Looper->>Judge: Evaluate all rounds
     Judge->>State: Read all arguments
@@ -135,14 +122,6 @@ graph LR
     E -.->|output_key| G[(Session State)]
     F -.->|output_key| G
     C -.->|reads from| G
-    
-    style A fill:#4a90e2,color:#fff
-    style B fill:#e24a90,color:#fff
-    style C fill:#4ae290,color:#fff
-    style D fill:#e2904a,color:#fff
-    style E fill:#9b59b6,color:#fff
-    style F fill:#e74c3c,color:#fff
-    style G fill:#95a5a6,color:#fff
 ```
 
 **Purpose:** Shows the hierarchical structure of agents and their relationships
@@ -172,11 +151,6 @@ flowchart LR
     
     G -->|Pro Wins| H[✅ Pro]
     G -->|Con Wins| I[✅ Con]
-    
-    style A fill:#e1f5ff
-    style F fill:#ffe1e1
-    style H fill:#90EE90
-    style I fill:#FFB6C1
 ```
 
 **Purpose:** Shows how data flows from input through rounds to final verdict
@@ -256,15 +230,6 @@ graph TB
     B2 --> B3
     B3 --> D[JudgeAgent]
     D --> E[Verdict]
-    
-    style A1 fill:#9b59b6,color:#fff
-    style A2 fill:#9b59b6,color:#fff
-    style A3 fill:#9b59b6,color:#fff
-    style C1 fill:#e74c3c,color:#fff
-    style C2 fill:#e74c3c,color:#fff
-    style C3 fill:#e74c3c,color:#fff
-    style D fill:#4ae290,color:#fff
-    style E fill:#ffe1e1
 ```
 
 **Purpose:** Shows how agents interact with shared state across iterations
@@ -280,13 +245,6 @@ graph LR
     B --> D[🔴 Con]
     C & D --> E[⚖️ Judge]
     E --> F[🏆 Winner]
-    
-    style A fill:#e1f5ff
-    style B fill:#ffe1f5
-    style C fill:#9b59b6,color:#fff
-    style D fill:#e74c3c,color:#fff
-    style E fill:#4ae290,color:#fff
-    style F fill:#FFD700
 ```
 
 **Purpose:** Simple, high-level flow for quick understanding
