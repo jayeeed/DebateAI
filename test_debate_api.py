@@ -52,8 +52,13 @@ def main():
         sys.exit(1)
 
     # Step 2: Start Debate
+
+    # ===========This is the topic of the debate===========
+    text = "Debate topic: Global warming is a hoax"
+    # =====================================================
+
     print("🎤 Step 2: Starting debate...")
-    print("Topic: Global warming is a real threat\n")
+    print(text)
     print("=" * 50)
     print()
 
@@ -68,7 +73,7 @@ def main():
                 "newMessage": {
                     "role": "user",
                     "parts": [
-                        {"text": "Debate topic: Global warming is a real threat"}
+                        {"text": text}
                     ],
                 },
             },

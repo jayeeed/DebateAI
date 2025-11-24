@@ -11,7 +11,6 @@ A multi-agent debate system built with Google ADK where two AI agents argue oppo
 - 🔁 **LoopAgent Pattern:** Elegant 3-round structure using iteration
 - 🥊 **3-Round Debate:** Agents build arguments progressively across rounds
 - 💾 **Shared State:** Agents access previous arguments to build stronger cases
-- 🎯 **Clean Output:** No meta-commentary, just debate content
 - 🔧 **Customizable:** Easy to modify topics, instructions, and models
 
 ## 🎭 System Architecture
@@ -24,6 +23,12 @@ The system uses **3 core agents** with a loop structure for efficient 3-round de
 3. **JudgeAgent** - Evaluates all 3 rounds and declares winner
 
 ## 🚀 Quick Start
+
+### Start ADK Web UI (Default: http://127.0.0.1:8000)
+
+```bash
+adk web
+```
 
 ### Start ADK server (Built-in FastAPI)
 
@@ -44,14 +49,14 @@ python test_debate_api.py
 🎭 Debate-AI System - API Test
 =============================
 
-👤 User ID: 84e67725-80cc-4d2d-9b28-ae78b6372210
-🔑 Session ID: 9ca6a68f-5b5b-45b4-b207-862a9cd811c1
+👤 User ID: 738e4e4a-185a-4707-8200-14e330d161e1
+🔑 Session ID: 43c4e9b5-8884-4762-be2b-9f38a9dc6547
 
 📝 Step 1: Creating session...
 ✅ Session created
 
 🎤 Step 2: Starting debate...
-Topic: Global warming is a real threat
+Topic: Global warming is a hoax
 
 ==================================================
 
@@ -63,11 +68,11 @@ ROUND 1: OPENING STATEMENTS
 
  🔵 PRO (Opening):
 --------------------------------------------------
-Global warming is unequivocally a real threat. The overwhelming scientific consensus, evidenced by NASA and the IPCC, confirms a rapidly warming planet driven by human activity. We are already witnessing devastating consequences: unprecedented extreme weather events, rising sea levels threatening coastal communities, and accelerating biodiversity loss. Ignoring these clear indicators jeopardizes future generations, demanding urgent action to mitigate catastrophic impacts.
+The "global warming" narrative misrepresents natural climate fluctuations. Earth's climate has always changed; current warming is part of these cyclical patterns, not unprecedented. Crucially, raw temperature data often undergoes significant "adjustments" by agencies, frequently increasing past warming to fit an alarming narrative. This manipulation, combined with failed predictions and obvious political opportunism, exposes the fabricated crisis for what it truly is: a well-orchestrated hoax.
 
  🔴 CON (Opening):
 --------------------------------------------------
-The proposition that global warming is an *existential* threat ignores crucial context. Earth's climate exhibits natural variability, with warming and cooling trends predating industrialization. Attributing all current climate phenomena solely to human activity overlooks significant solar, oceanic, and volcanic influences. While some warming is evident, historical data shows similar fluctuations, and the predicted catastrophic outcomes often rely on worst-case models. Prioritizing economically damaging policies over adaptation and acknowledging natural cycles is misguided, exaggerating a complex, multi-faceted environmental phenomenon into an unparalleled crisis.
+The argument for "natural climate fluctuations" ignores the unprecedented speed and scale of current warming, demonstrably linked to human activity. "Data adjustments" are standard scientific procedures for accuracy, not manipulation; *multiple independent agencies* using various methods confirm the alarming trend. The overwhelming scientific consensus, built on decades of empirical evidence from glaciers to ocean acidification, unequivocally establishes anthropogenic global warming as a stark reality, not a fabricated crisis or hoax.
 
 ==================================================
 ROUND 2: REBUTTALS
@@ -75,11 +80,11 @@ ROUND 2: REBUTTALS
 
  🔵 PRO (Rebuttal):
 --------------------------------------------------
-While natural climate variability is real, it *cannot* explain the unprecedented *rate* and *magnitude* of current warming. Scientific models, accounting for all natural factors like solar and volcanic activity, conclusively demonstrate that anthropogenic greenhouse gas emissions are the dominant driver. Dismissing this overwhelming evidence and relying on historical natural fluctuations is a dangerous false equivalence. The real threat isn't the models, but the accelerating impacts we're already experiencing, demanding urgent mitigation alongside adaptation.
+The "unprecedented speed" claim crumbles when examining geological timescales. Earth's climate has experienced far more rapid and dramatic shifts naturally. The alleged "consensus" is often manufactured, stifling dissenting scientists whose research contradicts the narrative, especially given how funding prioritizes alarmism. These systematic "adjustments" to historical data consistently amplify warming trends, generating a crisis from raw, unadjusted records. This ongoing data manipulation, coupled with politically aligned "consensus," underscores the hoax.
 
  🔴 CON (Rebuttal):
 --------------------------------------------------
-The assertion of an "unprecedented rate" often overlooks the limited temporal scope of precise instrumental records, while paleoclimate data reveals significant, rapid shifts pre-dating human industrialization. Scientific models, despite their utility, contain inherent uncertainties and are sensitive to parameters like climate sensitivity, which remains a subject of active debate. Attributing warming solely to human activity as the "dominant driver" oversimplifies Earth's complex, multifactorial climate system. Dismissing natural variability as a "false equivalence" risks ignoring fundamental climatic dynamics, promoting alarmism and potentially misguided, economically detrimental policies based on an incomplete picture rather than comprehensive scientific consensus.
+Geological timescales obscure the *unprecedented rate* of warming now, drastically impacting human civilization. The overwhelming scientific consensus is rigorously peer-reviewed, not manufactured; valid dissent strengthens science, not undermines it. Data adjustments standardize diverse inputs for accuracy, and *multiple independent datasets*, including satellite observations, consistently corroborate accelerating global warming. Denying this convergent evidence is denying reality.
 
 ==================================================
 ROUND 3: CLOSING STATEMENTS
@@ -87,11 +92,11 @@ ROUND 3: CLOSING STATEMENTS
 
  🔵 PRO (Closing):
 --------------------------------------------------
-Paleoclimate data reveals past changes, but the *current* warming trend, especially over the last century, is unequivocally *unprecedented in its speed and global synchronicity*, directly correlating with anthropogenic greenhouse gas emissions. While models have uncertainties, their robust, converging results across diverse scientific institutions confirm human activity as the **dominant driver**. Focusing on model "minutiae" or past natural cycles to dismiss this overwhelming evidence is a dangerous distraction from the very real and escalating threat demanding urgent, informed action, not further debate on settled science.
+Geological history is replete with *rapid*, dramatic climate shifts predating human influence, making the "unprecedented rate" argument short-sighted. The "peer-reviewed consensus" often functions as an echo chamber, actively marginalizing legitimate scientific dissent and prioritizing alarmist narratives. Even satellite data, initially showing less warming, undergoes *constant adjustments* that invariably align it with the surface record, consistently amplifying the warming trend. This systemic data manipulation, from surface to space, is a hallmark of the hoax.
 
  🔴 CON (Closing):
 --------------------------------------------------
-The claim of "unprecedented speed and global synchronicity" oversimplifies paleoclimate data, whose resolution often masks past rapid, localized shifts. To declare science "settled" on such a complex system like Earth's climate disregards the continuous evolution of scientific understanding and inherent model limitations, particularly concerning long-term predictions and climate sensitivity. Labeling legitimate scientific inquiry into these uncertainties as "distractions" stifles critical analysis. Focusing solely on anthropogenic drivers as the undisputed cause, while dismissing other natural influences, risks promoting a narrow, alarmist agenda that could lead to economically damaging, ineffective policies based on an incomplete and potentially exaggerated threat assessment.
+Past climate shifts, while significant, occurred over vastly different timescales and without human industrial drivers; the *current rate* is unprecedentedly fast and profoundly impactful on civilization. The scientific consensus is a rigorous framework, not an echo chamber, continually tested by new evidence; true scientific dissent requires robust data, not mere contrarianism. Satellite data adjustments, like for orbital drift or sensor degradation, are standard procedures to ensure accuracy, and *all major independent satellite datasets* now definitively show a clear, accelerating warming trend, consistent with surface and ocean data, decisively refuting claims of manipulation.
 
 ==================================================
 FINAL VERDICT
@@ -99,9 +104,18 @@ FINAL VERDICT
 
  ⚖️  JUDGE:
 --------------------------------------------------
-WINNER: Pro
-REASONING: Pro consistently presented a strong case, emphasizing the unprecedented *rate* and *magnitude* of current warming directly attributable to human activity, supported by overwhelming scientific consensus from diverse institutions. While Con effectively introduced the complexities of natural variability and model uncertainties, it struggled to provide compelling counter-evidence demonstrating that these factors *dominate* the current warming or that it is *not* unprecedented in its speed and global synchronicity. Pro effectively rebutted by clarifying that models *do* account for natural influences, reinforcing human activity as the dominant driver, making its argument more persuasive and logically consistent.
+SCORES:
+ROUND 1: [Pro 6/Con 8]
+ROUND 2: [Pro 6/Con 8.5]
+ROUND 3: [Pro 5.5/Con 9]
 
+TOTAL SCORE: [Pro 17.5/Con 25.5]
+
+WINNER: [Con]
+REASONING: Con consistently presented stronger arguments, grounding its claims in scientific consensus, empirical evidence, and logical defenses of scientific methodologies like data adjustments. It effectively countered Pro's claims of "hoax" by highlighting the unprecedented *rate* of current warming and the human industrial drivers, distinguishing it from natural historical fluctuations. Con's rebuttals were robust, directly addressing Pro's points with clarity and scientific rigor.
+
+LOSER: [Pro]
+REASONING: Pro's arguments, while attempting to sow doubt about data and consensus, consistently struggled to present compelling evidence for a "hoax" beyond generalized claims of manipulation and natural cycles. It failed to effectively counter Con's emphasis on the *rate* and *human cause* of current warming, often resorting to reiteration of its initial points without offering new or more specific evidence to support its claims of widespread fabrication.
 
 🏁 Debate Complete!
 ==================
@@ -109,33 +123,23 @@ REASONING: Pro consistently presented a strong case, emphasizing the unprecedent
 
 ## 🎯 Customizing Debate Topics
 
-Edit the debate topic in any script:
+Edit the debate topic in `test_debate_api.py`:
 
 **Python:**
 ```python
-"text": "Debate topic: YOUR TOPIC HERE"
+    # ===========This is the topic of the debate===========
+    text = "Debate topic: Global warming is a hoax"
+    # =====================================================
 ```
-
-**Batch/Shell:**
-```bash
-"text": "Debate topic: YOUR TOPIC HERE"
-```
-
-### Example Topics
-- "Remote work is better than office work"
-- "Social media harms society more than it helps"
-- "Nuclear energy is the best climate solution"
-- "Universal basic income should be implemented"
-- "Space exploration is worth the cost"
 
 ## 📁 Project Structure
 
 ```
 .
-├── DebateAI/
-│   ├── agent.py               # Multi-agent system definition
-│   └── __init__.py            # Package initialization
-├── .env                       # Environment variables (API keys)
+├── agents/
+│   ├── __init__.py            # Package initialization
+│   └── agent.py               # Multi-agent system definition
+├── .env                       # Environment variables (Gemini API key)
 ├── .gitignore                 # Git ignore file
 ├── test_debate_api.py         # Python test script
 └── README.md                  # This file
@@ -156,8 +160,8 @@ Content-Type: application/json
 
 {
   "appName": "agents",
-  "userId": "{uuid}",
-  "sessionId": "{uuid}",
+  "userId": "user1",
+  "sessionId": "session1",
   "newMessage": {
     "role": "user",
     "parts": [

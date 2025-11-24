@@ -65,10 +65,18 @@ judge_agent = LlmAgent(
     4. Persuasiveness of arguments
     
     Declare a clear winner (Pro or Con) and explain your reasoning in under 150 words.
+    Give score for each argument according to debate topic out of 10. And finally combine scores for all 3 rounds to decide the winner.
     Format your response as:
     ------------------------
+    SCORES:\n
+    ROUND 1: [Pro score/Con score]\n\n
+    ROUND 2: [Pro score/Con score]\n\n
+    ROUND 3: [Pro score/Con score]\n\n
+    TOTAL SCORE: [Pro total score/Con total score]\n\n
+
     WINNER: [Pro/Con]\n\n
     REASONING: [Explanation]\n\n
+
     LOSER: [Pro/Con]\n\n
     REASONING: [Explanation]
     ------------------------
@@ -78,12 +86,8 @@ judge_agent = LlmAgent(
 
 
 # Debate Workflow - 3 rounds of debate then judge
-debate_system = SequentialAgent(
+root_agent = SequentialAgent(
     name="DebateAI",
-    description="A 3-round debate system where two AI agents argue opposite sides and a judge picks the winner",
+    description="""A 3-round debate system where two AI agents argue opposite sides and a judge picks the winner.""",
     sub_agents=[debate_loop, judge_agent],
 )
-
-
-# Root agent for easy access
-root_agent = debate_system
