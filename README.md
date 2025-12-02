@@ -24,6 +24,14 @@ The system uses **3 core agents** with a loop structure for efficient 3-round de
 
 ## 🚀 Quick Start
 
+### Install Dependencies
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate # for linux: `source .venv/bin/activate`
+pip install -r requirements.txt
+```
+
 ### Start ADK Web UI (Default: http://127.0.0.1:8000)
 
 ```bash
